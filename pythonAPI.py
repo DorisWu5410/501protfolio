@@ -43,9 +43,7 @@ for i in range(1,len(cut)):
     df.loc[i-1] = row
 
 
-
-
-
+df.to_csv('pythonAPI.csv')
 
 
 
