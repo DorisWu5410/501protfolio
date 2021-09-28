@@ -13,7 +13,7 @@ import pandas as pd
 
 conn = pymysql.connect(host='localhost',
                              user='root',
-                             password='Westlife890@',
+                             password='mypassword',
                              database='501data')
 cur = conn.cursor()
 cur.execute("show tables")
