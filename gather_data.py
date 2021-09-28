@@ -8,8 +8,7 @@ Created on Wed Sep  8 23:46:24 2021
 import urllib.request
 
 baseurl = "https://s3.amazonaws.com/nyc-tlc/trip+data/"
-headers = {'User-Agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36",
-           'apiKey':'22f0aa365f634230b87894f7d5858fd5'}
+headers = {'User-Agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36",}
 
 
 monthlist = ['01','02','03','04','05','06','07','08','09','10','11','12']
@@ -23,7 +22,7 @@ def DfToSql(cartype,year,m,content):
     try:
         conn = pymysql.connect(host='localhost',
                              user='root',
-                             password='Westlife890@',
+                             password='mypassword',
                              database='501data')
         cur = conn.cursor()
         
